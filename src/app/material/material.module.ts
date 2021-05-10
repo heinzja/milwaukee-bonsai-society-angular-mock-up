@@ -5,23 +5,26 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatGridListModule
   ],
   exports: [
+    MatButtonModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatIconModule,
     MatMenuModule,
     MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatGridListModule
   ]
 })
 export class MaterialModule { }
