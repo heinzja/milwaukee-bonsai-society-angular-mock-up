@@ -7,10 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { MaterialModule } from './material/material.module';
+import { HomeComponent } from './content/home/home.component';
+import { TheLatestComponent } from './content/the-latest/the-latest.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    TheLatestComponent
   ],
   imports: [
     BrowserModule,
