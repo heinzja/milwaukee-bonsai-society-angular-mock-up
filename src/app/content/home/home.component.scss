@@ -1,5 +1,22 @@
 mat-card {
   margin: 1em;
+  max-width: 500px;
+}
+
+img {
+  max-width: 500px;
+}
+
+#banner {
+  display: block;
+  margin: auto;
+}
+
+#banner-img {
+  display: block;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #content {
@@ -8,4 +25,5 @@ mat-card {
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  align-items: center;
 }

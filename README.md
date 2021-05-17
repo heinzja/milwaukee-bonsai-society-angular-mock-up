@@ -1,6 +1,14 @@
 # milwaukee-bonsai-society-angular-mock-up
 A mock-up of www.milwaukeebonsai.org modernized using the Angular Framework and Angular Material Components.
 
+# Deployment
+In order to deploy this application one must first have an active AWS account as well as an S3 bucket. An AWS_ACCESS_KEY_ID can be retrieved from the IAM service after a user has been created. This project uses [@jefiozie/ngx-aws-deploy:deploy](https://github.com/Jefiozie/ngx-aws-deploy) while following the [Angular Deployment Docs](https://angular.io/guide/deployment#automatic-deployment-with-the-cli)
+
+Use these commands with the following example script to deploy to your AWS S3 Bucket of choice
+```bash
+npx cross-env NG_DEPLOY_AWS_ACCESS_KEY_ID=MY_AWS_ACCESS_KEY_ID NG_DEPLOY_AWS_SECRET_ACCESS_KEY=MY_AWS_SECRET_ACCESS_KEY NG_DEPLOY_AWS_BUCKET=mys3bucket NG_DEPLOY_AWS_REGION=us-east-2 ng deploylar-mock-up>
+```
+
 # MilwaukeeBonsaiSocietyAngularMockUp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
